@@ -1,0 +1,236 @@
+* {
+     box-sizing: border-box;
+}
+/* Body style*/
+ body {
+     font-family: Georgia, serif;
+     margin-top: 0;
+     margin-left: 0;
+     margin-right: 0;
+     margin-bottom: 50px;
+     align-items: center;
+}
+/* Header style */
+ .header {
+     padding: 10px;
+     text-align: center;
+     background: #66ccff;
+     color: #292929;
+     background-image: url("../header.jpg");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+/* Landing p font size */
+ .p-landing{
+     font-size: 130%;
+     font-family: cursive;
+}
+/* Landing footer style */
+ .footer {
+     padding: 0px;
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: #33cccc ;
+     color: black;
+     text-align: center;
+     font-family: serif;
+}
+/* topnavigatorbar style */
+ .topnavigatorbar {
+     overflow: hidden;
+     background-color: #33cccc;
+     width: 100%;
+}
+ .topnavigatorbar a {
+     float: left;
+     display: block;
+     color: black;
+     text-align: center;
+     padding: 14px 20px;
+     text-decoration: none;
+}
+ .topnavigatorbar a.right {
+     float: right;
+}
+/* Image size */
+ img {
+     width: 30%;
+     height: auto;
+     max-width: 500px;
+}
+/* Text field style */
+ input[type=text], input[type=tel], input[type=password], select {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+}
+/* Submit/Login button */
+ input[type=submit] {
+     background-color: #1abc9c;
+     color: white;
+     padding: 12px;
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+     float: right;
+     width: 75%;
+}
+/* Container style */
+ .container {
+     border-radius: 20px;
+     background-color: #f2f2f2;
+     padding: 10px;
+     margin:20px;
+}
+ .prcontainer {
+     border-radius: 15px;
+     background-color: #f2f2f2;
+     padding: 10px;
+     margin:20px;
+}
+ .card {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     padding: 10px;
+     margin: 5px;
+     text-align: center;
+     background-color: #f1f1f1;
+     transition: 0.3s;
+     border-radius: 10px;
+}
+ .primage {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+}
+ .card-row {
+     text-align: center;
+     margin: 4px;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+}
+ .price {
+     color: grey;
+     font-size: 15px;
+}
+ .columns, input[type=submit] {
+     width: 100%;
+     margin: 6px;
+     padding: 10px 
+}
+ button {
+     border: none;
+     outline: 0;
+     display: inline-block;
+     padding: 8px;
+     color: white;
+     background-color: #000;
+     text-align: center;
+     cursor: pointer;
+     width: 100%;
+     font-size: 15px;
+}
+/* Column container */
+ .main {
+     -ms-flex: 100%;
+    /* IE10 */
+     flex: 100%;
+     background-color: rgb(255, 255, 255);
+     padding: 100px;
+     text-align: center;
+}
+/* Text label */
+ label {
+     padding: 12px 12px 12px 0;
+     display: inline-block;
+}
+/* When screen <600px style */
+ @media screen and (max-width: 600px) {
+     .col-25, .col-75, input[type=submit] {
+         width: 100%;
+         margin-top: 0;
+    }
+     .card-row {
+         text-align: center;
+         margin: 4px;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+    }
+     .primage {
+         width: 100px;
+         height: 100px 
+    }
+     .header h1 {
+         font-size: 8vw;
+    }
+     .header p {
+         font-size: 4vw;
+    }
+     .main {
+         padding: 10px;
+    }
+     button[type=submit] {
+         width: 100%;
+    }
+     .row {
+         width: 100%;
+    }
+     .main-landing {
+         padding-top: 100px;
+         padding-bottom: 100px;
+         padding-left: 5px;
+         padding-right: 5px;
+    }
+}
+/* When screen >1000px style */
+ @media screen and (min-width: 601px) {
+     .container {
+         width: 50%;
+         margin: auto;
+    }
+     .prcontainer {
+         width: 90%;
+         margin: auto;
+    }
+     .header h1 {
+         font-size: 4vw;
+    }
+     .header p {
+         font-size: 2vw;
+    }
+     .main {
+         padding: 20px;
+         width: 100%;
+    }
+     button[type=submit] {
+         width: 30%;
+    }
+     .row {
+         width: 80%;
+    }
+     .main-landing {
+         padding-top: 50px;
+         padding-bottom: 50px;
+         padding-left: 5px;
+         padding-right: 5px;
+    }
+}
+ .col-25 {
+     float: left;
+     width: 30%;
+}
+ .col-75 {
+     float: left;
+     width: 70%;
+}
+ .row {
+     padding: 10px;
+     text-align: center;
+     display: inline-block;
+}
+ 
