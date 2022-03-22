@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registration</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../javascript/calerhome.js"></script>
+	<link rel="stylesheet" href="../css/calerhome_style.css">
+</head>
+
+<body>
+	<div class="header">
+		<h1>Caler Home</h1>
+		<p>Application For Anyone Who Loves Furniture</p>
+	</div>
+	<div class="topnavigatorbar">
+		<a href="login.html" class="right">Login</a>
+		<a href="../index.html" class="right">Landing Page</a>
+	</div>
+
+	<div class="main">
+		<center><img src="../images/calerhome.png"></center>
+		<div class="container">
+			<form name="registerForm" action="../php/PHPMailer/register.php" onsubmit="return validateRegister()"
+				method="post">
+				<div class="row">
+					<div class="col-25">
+						<label for="name">Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="idname" name="name" placeholder="Please enter your name">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="email">Email</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="idemail" name="email" placeholder="Please enter your email">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="phone">Phone</label>
+					</div>
+					<div class="col-75">
+						<input type="tel" id="idphone" name="phone" placeholder="Please enter your phone number">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="password">Password</label>
+					</div>
+					<div class="col-75">
+						<input type="password" id="idpass" name="password" placeholder="Please enter your password">
+					</div>
+				</div>
+				<div class="row">
+					<div><input type="submit" value="Register"
+							onclick="return confirm('Are you sure want to register?')">
+					</div>
+				</div>
+
+			</form>
+
+		</div>
+
+
+	</div>
+
+</body>
+
+</html>
